@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "391070944982",
+    "project_id": "animated-way-441000-v4",
+    "storage_bucket": "animated-way-441000-v4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391070944982:android:a205e6f837acb928218377",
+        "android_client_info": {
+          "package_name": "com.cdp.mymap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391070944982-lrom6r88d1mhe9g77p2j9m30so070lq3.apps.googleusercontent.coms",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cdp.mymap",
+            "certificate_hash": "fd219bc58fcbdc937183550a27a26a1b1948041b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZy4lK9ztgAuDsFcTf34H7JHrdvHTqTb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

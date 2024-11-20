@@ -1,0 +1,25 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Actualiza la versión de Android Gradle Plugin
+        classpath 'com.android.tools.build:gradle:8.6.0'
+
+        // Actualiza la versión de Google Services Plugin
+        classpath 'com.google.gms:google-services:4.4.2' // o la versión más reciente
+
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.6.0' apply false  // Actualiza la versión de Android Plugin
+    id 'com.android.library' version '8.6.0' apply false      // Actualiza la versión de Android Library Plugin
+    id 'com.google.gms.google-services' version '4.3.15' apply false // Actualiza la versión de Google Services Plugin
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

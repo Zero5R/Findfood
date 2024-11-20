@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Botón para registrar negocio -->
+    <Button
+        android:id="@+id/btnRegisterBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Registra tu negocio"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo para el nombre del restaurante -->
+    <TextView
+        android:id="@+id/tvNombreRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre Restaurante"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etNombreRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe el nombre del restaurante"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo para la ubicación -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnUbicacion"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="Ubicación"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <EditText
+            android:id="@+id/etUbicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="Escribe la dirección del restaurante" />
+    </LinearLayout>
+
+    <!-- Fotos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnFotos"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="Fotos"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/tvFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Fotos"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Menú -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="Menú"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Menú"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Imágenes de vista previa -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Vista previa de la foto tomada con botón Fotos" />
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/darker_gray"
+            android:contentDescription="Vista previa de la foto tomada con botón Menú" />
+    </LinearLayout>
+
+    <!-- Campo para código de comercio -->
+    <TextView
+        android:id="@+id/tvCodigoComercio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código de Comercio"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etCodigoComercio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el código de comercio"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para agregar -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Agregar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
